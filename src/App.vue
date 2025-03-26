@@ -258,15 +258,27 @@ export default {
         console.error('Error loading events:', error);
         // Fallback data if events.txt can't be loaded
         this.events = [
-          { id: 'E001', name: 'Web Development Workshop', category: 'Technology', duration: 4 },
-          { id: 'E002', name: 'Digital Marketing Trends', category: 'Marketing', duration: 3 },
-          { id: 'E003', name: 'Financial Planning Seminar', category: 'Finance', duration: 2 },
-          { id: 'E004', name: 'Startup Funding Strategies', category: 'Business', duration: 3 },
-          { id: 'E005', name: 'AI and Machine Learning', category: 'Technology', duration: 5 },
-          { id: 'E006', name: 'Social Media Marketing', category: 'Marketing', duration: 3 },
-          { id: 'E007', name: 'Investment Strategies', category: 'Finance', duration: 4 },
-          { id: 'E008', name: 'Leadership in Business', category: 'Business', duration: 3 }
-        ];
+  {eventid: 'EVT10001', eventname: 'Tech Innovations Conference', category: 'Technology', durationhour: 8},
+  {eventid: 'EVT10002', eventname: 'Startup Pitch Day', category: 'Business', durationhour: 6},
+  {eventid: 'EVT10003', eventname: 'AI & Machine Learning Summit', category: 'Technology', durationhour: 10},
+  {eventid: 'EVT10004', eventname: 'Cybersecurity Workshop', category: 'Technology', durationhour: 4},
+  {eventid: 'EVT10005', eventname: 'Digital Marketing Bootcamp', category: 'Marketing', durationhour: 6},
+  {eventid: 'EVT10006', eventname: 'Blockchain and Cryptocurrency', category: 'Finance', durationhour: 5},
+  {eventid: 'EVT10007', eventname: 'Entrepreneurship Forum', category: 'Business', durationhour: 7},
+  {eventid: 'EVT10008', eventname: 'Data Science Hackathon', category: 'Technology', durationhour: 12},
+  {eventid: 'EVT10009', eventname: 'Leadership and Management Summit', category: 'Business', durationhour: 9},
+  {eventid: 'EVT10010', eventname: 'E-commerce Strategies', category: 'Marketing', durationhour: 6},
+  {eventid: 'EVT10011', eventname: 'AI for Business', category: 'Business', durationhour: 8},
+  {eventid: 'EVT10012', eventname: 'IoT & Smart Devices Expo', category: 'Technology', durationhour: 7},
+  {eventid: 'EVT10013', eventname: 'Brand Strategy and Growth', category: 'Marketing', durationhour: 5},
+  {eventid: 'EVT10014', eventname: 'Investment and Wealth Management', category: 'Finance', durationhour: 6},
+  {eventid: 'EVT10015', eventname: 'Financial Technology (FinTech) Summit', category: 'Finance', durationhour: 8},
+  {eventid: 'EVT10016', eventname: 'AI Ethics and Regulations', category: 'Technology', durationhour: 4},
+  {eventid: 'EVT10017', eventname: 'Business Analytics Workshop', category: 'Business', durationhour: 6},
+  {eventid: 'EVT10018', eventname: 'SEO and Content Marketing', category: 'Marketing', durationhour: 7},
+  {eventid: 'EVT10019', eventname: 'Cryptocurrency Investment Strategies', category: 'Finance', durationhour: 9},
+  {eventid: 'EVT10020', eventname: 'Social Media Marketing Trends', category: 'Marketing', durationhour: 5}
+];
       }
     },
     checkPasswordMatch() {
@@ -274,7 +286,7 @@ export default {
     },
     submitForm() {
       this.submitted = true;
-      // In a real app, you would send the data to a server here
+      // send to mercury 
     }
   },
   watch: {
